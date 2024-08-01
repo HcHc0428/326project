@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="create-account-view">
+    <div class="container">
+        <div class="header">
+            <img src="up.png" alt="UP! Logo">
+            <h2>Create Your Account</h2>
+        </div>
+        <form>
+            <label for="name">Preferred Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="major">Major:</label>
+            <input type="text" id="major" name="major" required>
+
+            <label for="year">Academic Year:</label>
+            <select id="year" name="year" required>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                <option value="graduate">Graduate</option>
+            </select>
+
+            <label for="picture">Profile Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+
+            <label for="location">Residential Location:</label>
+            <select id="location" name="location" required>
+                <option value="southwest">Southwest</option>
+                <option value="central">Central</option>
+                <option value="off-campus">Off-Campus</option>
+                <!-- Add more options as needed -->
+            </select>
+            <input type="submit" value="Create Account" onclick="window.location.href='home.html'">
+            <script src="main.js"></script>
+</body>
+</html>
